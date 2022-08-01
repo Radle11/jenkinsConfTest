@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Runner" parallel="methods">
+    <test name="xml test">
+        <classes>
+            <class name="IFramePractice.IframeIntro">
+                <methods>
+                    <include name="test2"></include>
+                    <include name="test3"></include>
+                    <exclude name="test4"></exclude>
+                </methods>
+            </class>
+            <class name="WindowPractice.WindowsIntro"></class>
+        </classes>
+    </test>
+</suite>
+
